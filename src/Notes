@@ -1,0 +1,32 @@
+Physical Hard Drive
+    - Name
+    - Size (GB)
+    - UUID
+    - Name for the physical hard drive is SD(letter to increment)
+
+Physical Volume
+    - **Only one associated physical hard drive**
+    - User provided name
+    - UUID (Different for each one created. NOT the same because their parent class is the same)
+    - Can be added to volume groups
+
+Volume Groups
+    - List of physical volumes
+    - List of logical volumes
+    - UUID
+    - Checks how much free space it has left through looking at size of logical volumes
+    - Checks how it subtracts from total physical volume space
+
+Logical Volumes
+    - Size (will take away from VG total size)
+    - UUID
+    - User provided name
+    - Associated with a volume group
+    - If the amount of space of a new logical volume exceeds the storage of the volume group, don't make that new logical volume
+
+LVM interface stuff
+    - Able to list drives
+    - Create new physical volumes (they should not  
+    - Create new volume groups
+    - figure out how to use methods based on user input of method
+    - list physical volumes
